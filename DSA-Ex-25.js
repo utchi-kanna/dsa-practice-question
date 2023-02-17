@@ -29,10 +29,11 @@ let students = [
 
 let v = 70;
 
+let x = [];
 for (let i = 0; i < students.length; i++) {
   if (students[i].marks.physics > v) {
-    v = students[i];
-    console.log(v.name + " physics score is more than 70");
+    x.push(students[i].name);
   }
 }
+console.log(x + " physics score is more than 70");
 
